@@ -25,8 +25,12 @@
 
 
         <!-- Definity CSS -->
+        <link rel="stylesheet" href="{% static 'landingpage/assets/fonts/wave-font/css/wave-font.css' %}">
+
         <link rel="stylesheet" href="{% static 'landingpage/assets/styles/main.css' %}">
         <link rel="stylesheet" href="{% static 'landingpage/assets/styles/responsive.css' %}">
+
+        <link rel="stylesheet" href="{% static 'landingpage/css/arctan-fourier.css' %}">
 
         <!-- JS -->
         <script src="{% static 'landingpage/assets/js/vendor/modernizr-2.8.3.min.js' %}"></script>
@@ -202,13 +206,50 @@
                 <div class="ft-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
                   <span class="linea-basic-life-buoy"></span>
                   <h4>Analytics Solutions</h4>
-                  <p>We have extensive experience in analysis of complex scenarios and systems</p>
+                  <p>We have extensive experience in analysis of complex scenarios and systems.</p>
                   <a href="#">Learn more <span class="linea-arrows-slim-right"></span></a>
                 </div>
               </div>
 
             </div><!-- / .row -->
+
+            <div class="row">
+              
+              <!-- Item 4 -->
+              <div class="col-lg-4 col-md-6 mb-sm-50">
+                <div class="ft-item wow fadeInUp" data-wow-duration="1s">
+                  <span class="wave-minus"></span>
+                  <h4>Spectral Analysis</h4>
+                  <p>We do research in signal transmission.</p>
+                  <canvas id="arctan-title" class="sketch" width="290" height="100"></canvas>
+                  <a href="#">Learn more <span class="linea-arrows-slim-right"></span></a>
+                </div>
+              </div>
+
+              <!-- Item 2 -->
+              <!-- <div class="col-lg-4 col-md-6 mb-sm-50">
+                <div class="ft-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+                  <span class="linea-basic-display"></span>
+                  <h4>Telecommunications</h4>
+                  <p>We have produced a number of advances in pattern recognition and situation assessment.</p>
+                  <a href="#">Learn more <span class="linea-arrows-slim-right"></span></a>
+                </div>
+              </div> -->
+
+              <!-- Item 3 -->
+              <!-- <div class="col-lg-4 col-md-6 mb-sm-50">
+                <div class="ft-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
+                  <span class="linea-basic-life-buoy"></span>
+                  <h4>Analytics Solutions</h4>
+                  <p>We have extensive experience in analysis of complex scenarios and systems</p>
+                  <a href="#">Learn more <span class="linea-arrows-slim-right"></span></a>
+                </div>
+              </div> -->
+
+            </div><!-- / .row -->
           </section>
+          <br>
+        <br>
         </div><!-- / .gray-bg -->
     
 
@@ -246,9 +287,9 @@
           </div><!-- / .row -->
         </div><!-- / .container-fluid -->
 
+        <!-- ========== Arctan Fourier Animation ========== --> 
         
-        
-      
+        <!-- <canvas id="arctan-title" class="sketch" width="500" height="300"></canvas> -->
        
         <!-- ========== Footer Contact ========== -->
         
@@ -350,6 +391,18 @@
         <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOcd7o0W0r846FC_GoHSK56xeAvP8fV4s"></script> -->
 
         <!-- Definity JS -->
+        <script src="{% static 'landingpage/js/fourier/arctan-points.js' %}"></script>
+        <script src="{% static 'landingpage/js/fourier/matrix-multiplication.js' %}"></script>
+        <script src="{% static 'landingpage/js/fourier/fft.js' %}"></script>
+        <script src="{% static 'landingpage/js/fourier/controller.js' %}"></script>
+        <script src="{% static 'landingpage/js/fourier/controller-util.js' %}"></script>
+        <script src="{% static 'landingpage/js/fourier/canvas-controller.js' %}"></script>
+        <script src="{% static 'landingpage/js/fourier/util.js' %}"></script>
+        <script src="{% static 'landingpage/js/fourier/justfourierthings.js' %}"></script>
+        <script src="{% static 'landingpage/js/fourier/color.js' %}"></script>        
+        <script src="{% static 'landingpage/js/fourier/epicycles-controller.js' %}"></script>
+        <script src="{% static 'landingpage/js/fourier/conductor.js' %}"></script>
+
         <script src="{% static 'landingpage/assets/js/main.js' %}"></script>
     </body>
 </html>

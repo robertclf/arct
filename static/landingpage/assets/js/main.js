@@ -21,6 +21,8 @@
 		initKenburns();
 		initCountdown();
 
+		initArctanFourier();
+
 		if ( document.getElementById('shop-slider-range') ) {
 			initRangeSlider();
 		}
@@ -48,8 +50,43 @@
 		initPortfolio();
 		initBlogMasonry();
 
+		// initArctanFourier();
+
 	});
 
+
+/* --------------------------------------------------
+	Fourier
+-------------------------------------------------- */
+
+	let arctanConductor = null;
+
+	function hasArctanElement(id) {
+		return document.getElementById(id) != null;
+	}
+
+	function initArctanFourier() {
+
+		let controllers = [];
+
+		if (hasArctanElement('arctan-title')) {
+			let fourierTitle = new EpicyclesController('arctan-title');
+			fourierTitle.setPath(
+				arctanPoints.map(p => {
+					return {
+						// x: p.x * 0.9,
+						// y: p.y * 0.9 + 40
+						x: p.x * 3.5,
+						y: p.y * 3.5 + 15
+					}
+				}));
+			fourierTitle.period = 10;
+			controllers.push(fourierTitle);
+		}
+
+		arctanConductor = new Conductor(controllers);
+		arctanConductor.start();
+	}
 
 /* --------------------------------------------------
 	Navigation | Navbar
