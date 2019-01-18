@@ -83,6 +83,13 @@
 			fourierTitle.period = 10;
 			controllers.push(fourierTitle);
 		}
+		// idSpectralAnalysis
+		let squareWaveSplitController;
+		if (hasArctanElement('idSpectralAnalysis')) {
+			squareWaveSplitController = new WaveSplitController('idSpectralAnalysis');
+			squareWaveSplitController.setPath(getWave(squareWave, 256));
+			controllers.push(squareWaveSplitController);
+		}
 
 		arctanConductor = new Conductor(controllers);
 		arctanConductor.start();
