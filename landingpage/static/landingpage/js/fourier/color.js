@@ -43,4 +43,5 @@ const palette = {
     cyan: '#57a7cc',
     pink: '#e91e63',
     orange: '#ed7656',
+    white: '#fff',
 }

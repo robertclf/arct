@@ -83,6 +83,27 @@
 			fourierTitle.period = 10;
 			controllers.push(fourierTitle);
 		}
+
+		if (hasArctanElement('idArctanInc')) {
+			let fourierTitle = new ArctanEpicyclesController('idArctanInc');
+			fourierTitle.setPathColor('#fff');
+			// fourierTitle.setPathColor('#5c6281');
+			// fourierTitle.setCirclesColor('#363636');
+			fourierTitle.setCirclesColor('#5c6281');
+			
+			fourierTitle.setPath(
+				arctanincPoints.map(p => {
+					return {
+						// x: p.x * 0.9,
+						// y: p.y * 0.9 + 40
+						x: p.x * 3.5 + 50,
+						y: p.y * 3.5 + 50 
+					}
+				}));
+			fourierTitle.period = 10;
+			controllers.push(fourierTitle);
+		}
+
 		// idSpectralAnalysis
 		let squareWaveSplitController;
 		if (hasArctanElement('idSpectralAnalysis')) {
