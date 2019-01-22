@@ -62,7 +62,7 @@
               <span class="icon-bar"></span>
             </button>
             <!-- Logo -->
-            <!-- <a class="navbar-brand" href="#home"><img src="{% static 'landingpage/assets/images/logo-word-2.png' %}" alt="Arctan - Logo"></a> -->
+            <a class="navbar-brand" href="#home"><img src="{% static 'landingpage/assets/images/logo-word-2.png' %}" alt="Arctan - Logo"></a>
           </div>
 
           <!-- Navbar Links -->
@@ -95,13 +95,14 @@
                 <div class="hero-content">
                   <!-- <img src="{% static 'landingpage/assets/images/hero/ArctanLogo.png' %}" alt="Arctan"> -->
 
-                  <object type="image/svg+xml" data="{% static 'landingpage/assets/images/hero/ArctanLogo_a2.svg' %}">
+                  <object type="image/svg+xml" data="{% static 'landingpage/assets/images/hero/ArctanLogo_b2.svg' %}">
                     Your browser does not support SVG
                   </object>
 
-                  <h1 class="hero-lead">ARCTAN, INC.</h1>
+                  <canvas id="idArctanInc" class="sketch-title" width="700" height="300"></canvas>
+                  <!-- <h1 class="hero-lead">ARCTAN, INC.</h1> -->
 
-                  <h4 class="h-alt hero-secondary">Stay on the edge</h4>
+                  <h4 class="h-alt hero-secondary">Science &amp; engineering</h4>
                   <a href="#about" class="btn btn-light">Learn More</a>
                   
                   <!-- Scroller -->
@@ -126,29 +127,26 @@
           <div class="row section">
             
             <header class="sec-heading">
-              <h2>About Arctan, Inc.</h2>
-              <span class="subheading">Stay on the edge</span>
+              <h2>About Arctan</h2>
+              <span class="subheading">Science & Engineering</span>
             </header>
 
             <div class="col-md-4">
-              <p>
-                Arctan, Inc. is a small C-corporation based in Arlington, VA., performing cutting-edge R&D for a select group of leading companies and government clients. We provide analytic augmentation and software development for risk analysis and impact assessment. The subject matter is often considered difficult to model, but has significant effects on business.
-              </p>
+              <blockquote>In the long run, curiosity-driven research just works better... Real breakthroughs come from people focusing on what they're excited about.
+              <footer><cite>by geoffrey hinton</cite></footer></blockquote>
             </div>
             <div class="col-md-4">
-              <p>Our service is to rapidly develop, prove, and implement novel capabilities for use by our clients. These components offer measurable advantages in situational awareness and decision-making under uncertainty.
-              </p>
+              <p>Arctan, Inc. works for a small number of leading companies and government clients. We provide analytic augmentation and software for risk analysis and impact assessment. The subject matter is often considered difficult to model, but has significant effects on business.</p>
             </div>
             <div class="col-md-4">
-              <p>We are a fully independent company. We are able to rapidly deploy almost anywhere on the globe to accomplish analytic studies, trusted representation, prototyping and engineering.
-            </p>
+              <p>Our service is to rapidly develop, prove, and implement novel capabilities for use by our clients. These components offer measurable advantages in situational awareness and decision-making.</p>
             </div>
           </div><!-- / .row -->
-          <!-- <div class="row ws-m">
+          <div class="row ws-m">
             <div class="col-md-12 text-center">
               <a href="#" class="btn-text">More about us</a>
             </div>
-          </div> -->
+          </div>
         </section><!-- / .container -->
 
 
@@ -163,13 +161,13 @@
             <div class="cta-wrapper">
               <h3 class="h-alt wow fadeIn" data-wow-delay=".1s" data-wow-duration="1s">Personnel</h3>
 
+              
+
               <header class="sec-heading ws-s">
-                <span class="subheading">
-                  We employ a high quality scientific and engineering staff,<br>all of whom have made recent, significant contributions in their fields.<br>Our flexible fast-moving R&D workflow permeates the company culture and spirit.<br>All of our employees contribute to the creative process and growth of the company.
-                  <br><br>
-                  We do not regularly advertize new positions,<br>but interested candidates are always welcome to contact us.
-                </span>
+                <span class="subheading">We employ a high quality scientific and engineering staff, <br>all of whom have made recent, significant contributions in their fields.</span>
               </header>
+
+            
 
               <a href="#contact" class="btn btn-light btn-large wow fadeIn" data-wow-delay=".3s" data-wow-duration="1s">Get in touch</a>
             </div>
@@ -183,50 +181,19 @@
         <div class="gray-bg">
           <section id="services" class="container ft-cards">
             <div class="row section">
+
               <header class="sec-heading">
                 <h2>What we do</h2>
                 <span class="subheading">Cutting-Edge Technology</span>
               </header>
               
-              <div class="sec-heading">
-                <p>
-                A theme throughout our work is the unique 21st century problem of information overload.
-                </p>
-                <br>
-                <p>
-                  Our integrated innovation toolkit leverages novel frameworks for human-machine cooperation combined with a lean approach of highly modular technologies, both software and hardware. We have successfully applied this ansatz to tackle complex problems which lie at the intersction of both human cognition and machine bandwidth limitations.
-                </p>
-                <p>
-                  Technical fields of expertise include artificial intelligence, machine learning, telecommunications, data analytics, spectral analysis and game theory.
-                </p>
-              </div>
-
               <!-- Item 1 -->
               <div class="col-lg-4 col-md-6 mb-sm-50">
                 <div class="ft-item wow fadeInUp" data-wow-duration="1s">
                   <span class="linea-ecommerce-diamond"></span>
-                  <h4>Artificial Intelligence and Machine Learning</h4>
-                  <!-- <p>We have a strong reputation in model development, verification and validation, uncertainty quantification, and algorithm design.</p> -->
-                  
-                    <ul>
-                      <li>
-                        Convolutional Neural networks
-                      </li>
-                      <li>
-                        Image and video analysis
-                      </li>
-                      <li>
-                        Topic Modeling
-                      </li>
-                      <li>
-                        Probabilistic Networks
-                      </li>
-                      <li>
-                        Probabilistic Logic
-                      </li>
-                    </ul>     
-                  
-                  <!-- <a href="#">Learn more <span class="linea-arrows-slim-right"></span></a> -->
+                  <h4>AI</h4>
+                  <p>We have a strong reputation in model development, verification and validation, uncertainty quantification, and algorithm design.</p>
+                  <a href="#">Learn more <span class="linea-arrows-slim-right"></span></a>
                 </div>
               </div>
 
@@ -235,19 +202,8 @@
                 <div class="ft-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
                   <span class="linea-basic-display"></span>
                   <h4>Telecommunications</h4>
-                  <!-- <p>We have produced a number of advances in pattern recognition and situation assessment.</p> -->
-                  <ul>
-                    <li>
-                      Information distribution and diffusion
-                    </li>
-                    <li>
-                      Simulation of networks
-                    </li>
-                    <li>
-                      LTE, G4 and beyond
-                    </li>
-                  </ul>
-                  <!-- <a href="#">Learn more <span class="linea-arrows-slim-right"></span></a> -->
+                  <p>We have produced a number of advances in pattern recognition and situation assessment.</p>
+                  <a href="#">Learn more <span class="linea-arrows-slim-right"></span></a>
                 </div>
               </div>
 
@@ -255,23 +211,9 @@
               <div class="col-lg-4 col-md-6 mb-sm-50">
                 <div class="ft-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
                   <span class="linea-basic-life-buoy"></span>
-                  <h4>Data analytics</h4>
-                  <!-- <p>We have extensive experience in analysis of complex scenarios and systems.</p> -->
-                  <ul>
-                    <li>
-                      Databases
-                    </li>
-                    <li>
-                      Modeling
-                    </li>
-                    <li>
-                      Big data
-                    </li>
-                    <li>
-                      GPU computing
-                    </li>
-                  </ul>    
-                  <!-- <a href="#">Learn more <span class="linea-arrows-slim-right"></span></a> -->
+                  <h4>Analytics Solutions</h4>
+                  <p>We have extensive experience in analysis of complex scenarios and systems.</p>
+                  <a href="#">Learn more <span class="linea-arrows-slim-right"></span></a>
                 </div>
               </div>
 
@@ -287,20 +229,13 @@
                   <!-- <canvas id="idSpectralAnalysis" class="sketch" width="320" height="300"></canvas> -->
 
                   <h4>Spectral Analysis</h4>
-                  <!-- <p>We do research in signal transmission.</p> -->
-                  <ul>
-                    <li>
-                      Highly optimized Fast Fourier Transform (FFT) applications     
-                    </li>
-                    <li>
-                      GPU optimized FFT
-                    </li>
-                  </ul>
-                  <canvas id="idSpectralAnalysis" class="sketch" width="290" height="200"></canvas>
+                  <p>We do research in signal transmission.</p>
+                  
+                  <canvas id="arctan-title" class="sketch" width="290" height="100"></canvas>
+                  
+                  <a href="#">Learn more <span class="linea-arrows-slim-right"></span></a>
 
-                  <!-- <canvas id="arctan-title" class="sketch" width="290" height="100"></canvas> -->
-                  <!-- <a href="#">Learn more <span class="linea-arrows-slim-right"></span></a> -->
-
+                  
                 </div>
               </div>
 
@@ -311,22 +246,15 @@
                   
                   <!-- <canvas id="idSpectralAnalysis" class="sketch" width="320" height="300"></canvas> -->
 
-                  <h4>Computational Game Theory</h4>
-                  <ul>
-                    <li>
-                      Modeling     
-                    </li>
-                    <li>
-                      Solution of large scale games
-                    </li>
-                  </ul>
-                  <!-- <p>We do research in signal transmission.</p> -->
+                  <h4>Spectral Analysis</h4>
+                  <p>We do research in signal transmission.</p>
                   <!--
                   <canvas id="arctan-title" class="sketch" width="290" height="100"></canvas>
                   -->
-                  
-                  <!-- <a href="#">Learn more <span class="linea-arrows-slim-right"></span></a> -->
+                  <canvas id="idSpectralAnalysis" class="sketch" width="290" height="200"></canvas>
+                  <a href="#">Learn more <span class="linea-arrows-slim-right"></span></a>
 
+                  
                 </div>
               </div>
 
@@ -359,9 +287,10 @@
 
         <!-- ========== Featured Projects ========== -->
 
-        <!-- <div id="portfolio" class="container-fluid ft-hover-item">
+        <div id="portfolio" class="container-fluid ft-hover-item">
           <div class="row">
             
+            <!-- Item 1 -->
             <div class="ft-item ft-1 col-md-6">
               <div class="bg-overlay">
 
@@ -371,9 +300,10 @@
                   <a href="#" class="btn-ghost btn-ghost-light ft-button">View Project</a>
                 </div>
 
-              </div>
-            </div>
-            
+              </div><!-- / .bg-overlay -->
+            </div><!-- / .ft-item -->
+
+            <!-- Item 2 -->
             <div class="ft-item ft-2 col-md-6">
               <div class="bg-overlay">
 
@@ -383,11 +313,11 @@
                   <a href="#" class="btn-ghost btn-ghost-light ft-button">View Project</a>
                 </div>
 
-              </div>
-            </div>
+              </div><!-- / .bg-overlay -->
+            </div><!-- / .ft-item -->
 
-          </div>
-        </div> -->
+          </div><!-- / .row -->
+        </div><!-- / .container-fluid -->
 
         <!-- ========== Arctan Fourier Animation ========== --> 
         
@@ -400,8 +330,7 @@
             <div class="row">
 
               <!-- Map and address -->
-              <!-- <div class="col-lg-9 no-gap contact-info"> -->
-              <div class="col-lg-12 no-gap contact-info">
+              <div class="col-lg-9 no-gap contact-info">
 
                 <!-- Show Info Button -->
                 <a href="#" class="show-info-link"><i class="fa fa-info"></i>Show info</a>
@@ -413,7 +342,7 @@
                     <!-- Address -->
                     <li class="contact-group">
                       <span class="adr-heading">Address</span>
-                      <span class="adr-info">Arlington, VA., US</span>
+                      <span class="adr-info">___, Arlington, VA. US</span>
                     </li>
                     <!-- Email -->
                     <li class="contact-group">
@@ -422,7 +351,19 @@
                       <span class="adr-info"><img src="{% static 'landingpage/assets/images/arctan-contact.png' %}" alt="Arctan - Email"></span>
                       
                     </li>
-                  </ul>      
+                  </ul>
+                  <ul>
+                    <!-- Phone -->
+                    <li class="contact-group">
+                      <span class="adr-heading">Phone</span>
+                      <span class="adr-info">+ 123 4567 890</span>
+                    </li>
+                    <!-- Mobile -->
+                    <li class="contact-group">
+                      <span class="adr-heading">Mobile</span>
+                      <span class="adr-info">+ 123 4567 890</span>
+                    </li>
+                  </ul>                  
                   
                   <!-- <a href="#" class="show-map"><span class="linea-basic-geolocalize-05"></span>show on map</a> -->
                 </address>
@@ -437,10 +378,9 @@
           <div class="copyright">
             <div class="container">
               <div class="row">
-                <br>
-                <br>
+                
                 <div class="col-md-6">
-                  <small>&copy; 2019 Arctan, Inc.
+                  <small>&copy; 2018 Arctan, Inc.
                   <!--   <a class="no-style-link" href="http://themeforest.net/user/octarinethemes" target="_blank">OctarineThemes</a> -->
                   </small>
                 </div>
@@ -476,7 +416,7 @@
         <script src="{% static 'landingpage/assets/js/vendor/jquery.magnific-popup.min.js' %}"></script>
         <script src="{% static 'landingpage/assets/js/vendor/wow.min.js' %}"></script>
         <script src="{% static 'landingpage/assets/js/vendor/jquery.ajaxchimp.js' %}"></script>
-        <script src="{% static 'landingpage/assets/js/vendor/animDots.js' %}"></script>
+        <script src="{% static 'landingpage/assets/js/vendor/animDots_pretify.js' %}"></script>
 
         <!-- Google Maps -->
         <!-- <script src="{% static 'landingpage/assets/js/gmap.js' %}"></script> -->
@@ -493,8 +433,8 @@
         <script src="{% static 'landingpage/js/fourier/util.js' %}"></script>
         <script src="{% static 'landingpage/js/fourier/justfourierthings.js' %}"></script>
         <script src="{% static 'landingpage/js/fourier/color.js' %}"></script>        
-        <!-- <script src="{% static 'landingpage/js/fourier/epicycles-controller.js' %}"></script>
-        <script src="{% static 'landingpage/js/fourier/arctan-epicycles-controller.js' %}"></script> -->
+        <script src="{% static 'landingpage/js/fourier/epicycles-controller.js' %}"></script>
+        <script src="{% static 'landingpage/js/fourier/arctan-epicycles-controller.js' %}"></script>
 
         <script src="{% static 'landingpage/js/fourier/wave-things.js' %}"></script>
        <!--  <script src="{% static 'landingpage/js/fourier/wave-controller.js' %}"></script> -->
