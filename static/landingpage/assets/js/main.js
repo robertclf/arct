@@ -22,6 +22,7 @@
 		initCountdown();
 
 		initArctanFourier();
+		
 
 		if ( document.getElementById('shop-slider-range') ) {
 			initRangeSlider();
@@ -49,7 +50,8 @@
 
 		initPortfolio();
 		initBlogMasonry();
-
+		
+		$("#idScrollDown").mousemove();
 		// initArctanFourier();
 
 	});

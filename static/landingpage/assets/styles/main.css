@@ -1243,12 +1243,14 @@ mark {
 
 ::-moz-selection {
   color: #fff;
-  background: #17DA5B;
+  /*background: #17DA5B;*/
+  background: #434759;
 }
 
 ::selection {
   color: #fff;
-  background: #17DA5B;
+  /*background: #17DA5B;*/
+  background: #434759;
 }
 
 /* ---- 1.1 Text ---- */
@@ -2092,7 +2094,7 @@ fieldset[disabled] .form-control:hover {
 /* --------------------------------------------------
 	7.0 Footers
 -------------------------------------------------- */
-.copyright {
+.copyright {	
   background: #222;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -2371,7 +2373,9 @@ fieldset[disabled] .form-control:hover {
 }
 
 .footer-contact .contact-info .footer-map {
-  height: 790px;
+  /*height: 790px;*/
+  /*arctan*/
+  height: 220px;
   background: #ccc;
 }
 
@@ -2420,7 +2424,9 @@ fieldset[disabled] .form-control:hover {
 .footer-contact .contact-info address {
   position: absolute;
   margin-bottom: 0;
-  padding: 280px 100px 0 130px;
+  /*padding: 280px 100px 0 130px;*/
+  /*arctan*/
+  padding: 50px 20px 0 100px;
   top: 0;
   left: 0;
   width: 100%;
