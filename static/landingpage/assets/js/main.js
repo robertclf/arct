@@ -50,8 +50,6 @@
 
 		initPortfolio();
 		initBlogMasonry();
-		
-		$("#idScrollDown").mousemove();
 		// initArctanFourier();
 
 	});
