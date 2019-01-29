@@ -108,7 +108,8 @@
 		let squareWaveSplitController;
 		if (hasArctanElement('idSpectralAnalysis')) {
 			squareWaveSplitController = new WaveSplitController('idSpectralAnalysis');
-			squareWaveSplitController.setPath(getWave(squareWave, 256));
+			// squareWaveSplitController.setPath(getWave(squareWave, 256));
+			squareWaveSplitController.setPath(getWave(squareWave, 64));   /* arctan */
 			controllers.push(squareWaveSplitController);
 		}
 

@@ -3119,7 +3119,7 @@ fieldset[disabled] .form-control:hover {
 /* ---- 9.1 Feature - Cards ---- */
 .ft-cards .ft-item {
   padding: 50px 40px;
-  height: 400px; /* arctan */
+  height: 550px; /* arctan */
   border: 1px solid #f8f8f8;
   background: #fff;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
