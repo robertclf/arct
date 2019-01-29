@@ -60,7 +60,8 @@ class WaveSplitController extends CanvasController {
 
         const pos = this.getScrollPosition();
         let desiredSplitAmt = 0;
-        if (pos < 0.7) {
+        // if (pos < 0.7) {
+        if (pos < 0.9) {   /* arctan */
             desiredSplitAmt = 1;
         }
         this.splitAmt += transitionFactor * (desiredSplitAmt - this.splitAmt);
